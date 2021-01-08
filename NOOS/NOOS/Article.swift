@@ -12,4 +12,5 @@ struct Article {
     var title: String
     var body: String
     var image: UIImage
+    
 }
