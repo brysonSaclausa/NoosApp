@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="298" id="gdE-PN-Exr"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BC5-UD-htu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MapCell" id="BC5-UD-htu">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BC5-UD-htu" id="wOU-4x-c0O">
@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1965" y="6"/>
         </scene>
-        <!--View Controller-->
+        <!--Article Table View Controller-->
         <scene sceneID="IIf-ye-fP2">
             <objects>
-                <viewController id="hF9-Oj-u2Y" sceneMemberID="viewController">
+                <viewController id="hF9-Oj-u2Y" customClass="ArticleTableViewController" customModule="NOOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z8o-nP-HKt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mzm-ET-8hp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArticleCell" id="mzm-ET-8hp">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mzm-ET-8hp" id="mTJ-7B-PY2">
@@ -107,8 +107,14 @@
                             <constraint firstItem="wtj-Kk-igX" firstAttribute="leading" secondItem="fAB-nj-orl" secondAttribute="leading" id="MRX-F9-s6l"/>
                             <constraint firstItem="fAB-nj-orl" firstAttribute="bottom" secondItem="wtj-Kk-igX" secondAttribute="bottom" id="YBx-cI-fel"/>
                         </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="wtj-Kk-igX" id="IMf-WE-uRn"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="qmM-0m-nLn"/>
+                    <connections>
+                        <outlet property="articleTableView" destination="wtj-Kk-igX" id="HuN-cl-0Dg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRW-Yh-CgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

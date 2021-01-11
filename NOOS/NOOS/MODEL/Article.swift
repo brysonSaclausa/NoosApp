@@ -9,10 +9,12 @@ import Foundation
 import UIKit
 
 // Article- Basic model object
-struct Article {
+class Article {
     var title: String
-    var subtitle: String
-    var body: String
-    var image: UIImage
+
+    
+    init(title: String) {
+        self.title = title
+    }
     
 }
