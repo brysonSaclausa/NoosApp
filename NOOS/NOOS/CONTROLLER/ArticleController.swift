@@ -13,8 +13,8 @@ class ArticleController {
     var articleArray = [Article]()
     
     init() {
-        let article001 = Article(title: "article001")
-        let article002 = Article(title: "article002")
+        let article001 = Article(title: "Featured")
+        let article002 = Article(title: "Newest")
         [article001, article002].forEach {
             articleArray.append($0)
 

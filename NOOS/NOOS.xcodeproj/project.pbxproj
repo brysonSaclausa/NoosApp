@@ -72,11 +72,9 @@
 				7CDDD3412593CA03003BDCCF /* SceneDelegate.swift */,
 				7CF576CE25AC333600042982 /* MODEL */,
 				7CF576CF25AC334700042982 /* VIEWS */,
-				7CDDD3452593CA03003BDCCF /* Main.storyboard */,
 				7C71681825AEC792003E352E /* VIEW CONTROLLERS */,
 				7CF576D025AC335200042982 /* CONTROLLER */,
 				7CDDD3482593CA04003BDCCF /* Assets.xcassets */,
-				7CDDD34A2593CA04003BDCCF /* LaunchScreen.storyboard */,
 				7CDDD34D2593CA04003BDCCF /* Info.plist */,
 			);
 			path = NOOS;
@@ -93,6 +91,8 @@
 		7CF576CF25AC334700042982 /* VIEWS */ = {
 			isa = PBXGroup;
 			children = (
+				7CDDD34A2593CA04003BDCCF /* LaunchScreen.storyboard */,
+				7CDDD3452593CA03003BDCCF /* Main.storyboard */,
 			);
 			path = VIEWS;
 			sourceTree = "<group>";
