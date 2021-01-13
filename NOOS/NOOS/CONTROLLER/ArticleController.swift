@@ -14,11 +14,12 @@ class ArticleController {
     
     init() {
         let article001 = Article(title: "article001")
-        [article001].forEach {
+        let article002 = Article(title: "article002")
+        [article001, article002].forEach {
             articleArray.append($0)
-            
+
         }
-        print(articleArray)
+        
     }
 
 }
