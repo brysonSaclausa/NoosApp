@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-// Article- Basic model object
-class Article {
+// Category- Basic model object
+class Category {
     var title: String
 
     
