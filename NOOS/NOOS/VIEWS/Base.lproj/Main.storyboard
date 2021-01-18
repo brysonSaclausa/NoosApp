@@ -85,7 +85,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" id="Bb9-A3-oeJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="Bb9-A3-oeJ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bb9-A3-oeJ" id="Jo9-FL-98u">
@@ -159,25 +159,41 @@
         <!--News-->
         <scene sceneID="Rdi-UV-lNT">
             <objects>
-                <collectionViewController id="npx-Lg-2TW" sceneMemberID="viewController">
+                <collectionViewController id="npx-Lg-2TW" customClass="ArticleCollectionViewController" customModule="NOOS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NCf-ai-b3v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wEU-OX-Qsp">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="414" height="197"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yyt-X7-ERL">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCell" translatesAutoresizingMaskIntoConstraints="NO" id="yyt-X7-ERL" customClass="ArticleCollectionViewCell" customModule="NOOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Lu-sS-iA3">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oWJ-Wv-iHP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cps-iF-Xu6">
+                                            <rect key="frame" x="186" y="88" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cps-iF-Xu6" firstAttribute="centerX" secondItem="oWJ-Wv-iHP" secondAttribute="centerX" id="Ku5-MM-IUS"/>
+                                        <constraint firstItem="cps-iF-Xu6" firstAttribute="centerY" secondItem="oWJ-Wv-iHP" secondAttribute="centerY" id="zSh-8H-6ZL"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="414" height="197"/>
+                                <connections>
+                                    <outlet property="articleTitleLabel" destination="cps-iF-Xu6" id="hhc-c6-D5t"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -189,7 +205,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZy-w9-pAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="312" y="1417"/>
+            <point key="canvasLocation" x="311.59420289855075" y="1416.9642857142856"/>
         </scene>
         <!--Map-->
         <scene sceneID="oG1-ra-Xqi">
