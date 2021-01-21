@@ -19,7 +19,8 @@ class ArticleController {
         let category004 = Category(title: "Fashion")
         let category005 = Category(title: "History")
         let category006 = Category(title: "Events")
-        [category001, category002,category003, category004,category005, category006].forEach {
+        let category007 = Category(title: "Past")
+        [category001, category002,category003, category004,category005, category006, category007].forEach {
             articleArray.append($0)
 
         }
