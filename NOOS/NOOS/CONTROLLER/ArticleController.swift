@@ -26,10 +26,10 @@ class ArticleController {
 
         }
         
-        /*
+        
          class RandomUserContoller {
              
-             private let baseURL = URL(string: "https://randomuser.me/api/?format=json&inc=name,email,phone,picture&results=1000")!
+             private let baseURL = URL(string: "https:randomuser.me/api/?format=json&inc=name,email,phone,picture&results=1000")!
              
              enum NetworkError: Error {
                  case noData
@@ -39,16 +39,16 @@ class ArticleController {
              }
              
              func fetchRandomUsers(completion: @escaping (Result<UserResults, NetworkError>) -> Void ) {
-                 //create request
+                 create request
                  var request = URLRequest(url: baseURL)
-                 //read method
+                 read method
                  request.httpMethod = "GET"
              }
              
              func fetchUserPhoto() {
                  
              }
-         */
+         
     }
 
 }
