@@ -37,13 +37,7 @@ class ArticleController {
                  case noDecode
                  case downloadError
              }
-             
-//             func fetchRandomUsers(completion: @escaping (Result<UserResults, NetworkError>) -> Void ) {
-//                 create request
-//                 var request = URLRequest(url: baseURL)
-//                 read method
-//                 request.httpMethod = "GET"
-//             }
+            
              
              func fetchUserPhoto() {
                  
