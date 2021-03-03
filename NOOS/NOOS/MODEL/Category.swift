@@ -11,10 +11,12 @@ import UIKit
 // Category- Basic model object
 class Category {
     var title: String
+    var image: UIImage
 
     
-    init(title: String) {
+    init(title: String, image: UIImage) {
         self.title = title
+        self.image = image
     }
     
 }
