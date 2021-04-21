@@ -19,7 +19,7 @@
 		7CDDD3472593CA03003BDCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDDD3452593CA03003BDCCF /* Main.storyboard */; };
 		7CDDD3492593CA04003BDCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDDD3482593CA04003BDCCF /* Assets.xcassets */; };
 		7CDDD34C2593CA04003BDCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDDD34A2593CA04003BDCCF /* LaunchScreen.storyboard */; };
-		7CF576C225AC2A7B00042982 /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF576C125AC2A7B00042982 /* ArticleController.swift */; };
+		7CF576C225AC2A7B00042982 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF576C125AC2A7B00042982 /* CategoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		7CDDD3482593CA04003BDCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CDDD34B2593CA04003BDCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CDDD34D2593CA04003BDCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CF576C125AC2A7B00042982 /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
+		7CF576C125AC2A7B00042982 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		7CF576D025AC335200042982 /* CONTROLLER */ = {
 			isa = PBXGroup;
 			children = (
-				7CF576C125AC2A7B00042982 /* ArticleController.swift */,
+				7CF576C125AC2A7B00042982 /* CategoryController.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 				7C71681A25AEC7C8003E352E /* ArticleTableViewController.swift in Sources */,
 				7C884CC525A5AA4000368502 /* Category.swift in Sources */,
 				7C824BB425B030A70081CA99 /* Article.swift in Sources */,
-				7CF576C225AC2A7B00042982 /* ArticleController.swift in Sources */,
+				7CF576C225AC2A7B00042982 /* CategoryController.swift in Sources */,
 				7CDDD3402593CA03003BDCCF /* AppDelegate.swift in Sources */,
 				7C824BBA25B034CC0081CA99 /* ArticleCollectionViewCell.swift in Sources */,
 				7C9A15C125F9E6CF00FEE76C /* NewViewController.swift in Sources */,

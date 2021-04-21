@@ -8,11 +8,11 @@
 import UIKit
 
 class ArticleTableViewController: UITableViewController {
-    var articleController: ArticleController! = nil
+    var articleController: CategoryController! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        articleController = ArticleController()
+        articleController = CategoryController()
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -22,13 +22,13 @@ class ArticleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return articleController.articleArray.count
+        return articleController.CategoryArray.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
-        let article = articleController.articleArray[indexPath.row]
+        let article = articleController.CategoryArray[indexPath.row]
     
         cell.textLabel?.text = article.title
         return cell
