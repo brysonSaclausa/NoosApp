@@ -19,7 +19,7 @@ class CategoryController {
         let category004 = Category(title: "Fashion")
         let category005 = Category(title: "History")
         let category006 = Category(title: "Events")
-        let category007 = Category(title: "Past")
+        let category007 = Category(title: "Archive")
         
         [category001, category002,category003, category004,category005, category006, category007].forEach {
             CategoryArray.append($0)

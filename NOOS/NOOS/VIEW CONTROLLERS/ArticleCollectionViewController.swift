@@ -8,6 +8,7 @@
 import UIKit
 
 private let reuseIdentifier = "articleCell"
+let sampleImage = UIImage(named: "austin-smart-70350")
 
 class ArticleCollectionViewController: UICollectionViewController {
 
@@ -50,6 +51,8 @@ class ArticleCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "articleCell", for: indexPath) as! ArticleCollectionViewCell
         
         cell.backgroundColor = .blue
+        cell.articleImageCell?.image = sampleImage
+        
         
         // Configure the cell
     

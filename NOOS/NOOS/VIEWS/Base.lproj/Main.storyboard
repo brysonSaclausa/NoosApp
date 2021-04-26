@@ -171,27 +171,37 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCell" translatesAutoresizingMaskIntoConstraints="NO" id="yyt-X7-ERL" customClass="ArticleCollectionViewCell" customModule="NOOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" reuseIdentifier="ArticleCell" translatesAutoresizingMaskIntoConstraints="NO" id="yyt-X7-ERL" customClass="ArticleCollectionViewCell" customModule="NOOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oWJ-Wv-iHP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cps-iF-Xu6">
-                                            <rect key="frame" x="186" y="88" width="42" height="21"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DbA-mf-eRs">
+                                            <rect key="frame" x="11" y="8" width="392" height="152"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cps-iF-Xu6">
+                                            <rect key="frame" x="8" y="168" width="398" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cps-iF-Xu6" firstAttribute="centerX" secondItem="oWJ-Wv-iHP" secondAttribute="centerX" id="Ku5-MM-IUS"/>
-                                        <constraint firstItem="cps-iF-Xu6" firstAttribute="centerY" secondItem="oWJ-Wv-iHP" secondAttribute="centerY" id="zSh-8H-6ZL"/>
+                                        <constraint firstAttribute="trailing" secondItem="DbA-mf-eRs" secondAttribute="trailing" constant="11" id="D5r-s3-gYn"/>
+                                        <constraint firstAttribute="bottom" secondItem="cps-iF-Xu6" secondAttribute="bottom" constant="8" id="DcW-er-2Ae"/>
+                                        <constraint firstItem="DbA-mf-eRs" firstAttribute="top" secondItem="oWJ-Wv-iHP" secondAttribute="top" constant="8" id="ES2-uX-ZmS"/>
+                                        <constraint firstItem="DbA-mf-eRs" firstAttribute="top" secondItem="oWJ-Wv-iHP" secondAttribute="top" constant="8" id="G0y-4C-MBh"/>
+                                        <constraint firstItem="cps-iF-Xu6" firstAttribute="top" secondItem="DbA-mf-eRs" secondAttribute="bottom" constant="8" symbolic="YES" id="Vzr-5R-FmT"/>
+                                        <constraint firstItem="cps-iF-Xu6" firstAttribute="leading" secondItem="oWJ-Wv-iHP" secondAttribute="leading" constant="8" id="Ytw-IG-Sxw"/>
+                                        <constraint firstAttribute="trailing" secondItem="cps-iF-Xu6" secondAttribute="trailing" constant="8" id="tAo-ti-So9"/>
+                                        <constraint firstItem="DbA-mf-eRs" firstAttribute="leading" secondItem="oWJ-Wv-iHP" secondAttribute="leading" constant="11" id="xPD-39-rxI"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="414" height="197"/>
                                 <connections>
+                                    <outlet property="articleImageCell" destination="DbA-mf-eRs" id="cK9-pw-ZJK"/>
                                     <outlet property="articleTitleLabel" destination="cps-iF-Xu6" id="hhc-c6-D5t"/>
                                 </connections>
                             </collectionViewCell>

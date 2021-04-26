@@ -54,6 +54,9 @@
 		7C71681825AEC792003E352E /* VIEW CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				7C824BB925B034CC0081CA99 /* ArticleCollectionViewCell.swift */,
+				7C6667E825FDADCF008166B5 /* NoosTableViewController.swift */,
+				7C9A15C025F9E6CF00FEE76C /* NewViewController.swift */,
 				7C71681925AEC7C8003E352E /* ArticleTableViewController.swift */,
 				7C824BB625B0322C0081CA99 /* ArticleCollectionViewController.swift */,
 			);
@@ -105,9 +108,6 @@
 			children = (
 				7CDDD34A2593CA04003BDCCF /* LaunchScreen.storyboard */,
 				7CDDD3452593CA03003BDCCF /* Main.storyboard */,
-				7C824BB925B034CC0081CA99 /* ArticleCollectionViewCell.swift */,
-				7C9A15C025F9E6CF00FEE76C /* NewViewController.swift */,
-				7C6667E825FDADCF008166B5 /* NoosTableViewController.swift */,
 			);
 			path = VIEWS;
 			sourceTree = "<group>";
