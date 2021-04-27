@@ -262,14 +262,43 @@
                     <view key="view" contentMode="scaleToFill" id="yBM-Sw-Ffk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JUu-z3-r2x">
+                                <rect key="frame" x="179" y="159" width="56" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moe-BB-S7D">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-O1-R5h">
+                                <rect key="frame" x="147" y="196" width="120" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8Ms-8U-Bik"/>
+                                    <constraint firstAttribute="height" constant="30" id="fYL-rD-mB0"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="rectangle.and.pencil.and.ellipsis" catalog="system"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7hv-6K-ojj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JUu-z3-r2x" firstAttribute="top" secondItem="7hv-6K-ojj" secondAttribute="top" constant="19" id="MzM-Jf-R6R"/>
+                            <constraint firstItem="JUu-z3-r2x" firstAttribute="centerX" secondItem="yBM-Sw-Ffk" secondAttribute="centerX" id="V0B-KG-ZZ2"/>
+                            <constraint firstItem="hYE-O1-R5h" firstAttribute="centerX" secondItem="yBM-Sw-Ffk" secondAttribute="centerX" id="gf8-GN-adv"/>
+                            <constraint firstItem="hYE-O1-R5h" firstAttribute="top" secondItem="JUu-z3-r2x" secondAttribute="bottom" constant="16.5" id="oPZ-m7-LQ2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="eLz-J1-rFl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46W-me-5SS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3435" y="1417"/>
+            <point key="canvasLocation" x="3434.7826086956525" y="1416.9642857142856"/>
         </scene>
         <!--News-->
         <scene sceneID="jO8-XM-Xd2">
@@ -318,6 +347,7 @@
         <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
