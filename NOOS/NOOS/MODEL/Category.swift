@@ -11,7 +11,6 @@ import UIKit
 // Category- Basic model object
 class Category {
     var title: String
-
     
     init(title: String) {
         self.title = title

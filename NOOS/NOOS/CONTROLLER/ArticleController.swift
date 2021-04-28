@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
-class CategoryController {
+class ArticleController {
+   
+    //Do Work: 
     
+    // Catergories
     var CategoryArray = [Category]()
     
     init() {
@@ -25,9 +28,7 @@ class CategoryController {
             CategoryArray.append($0)
             
         }
-        
-        
-        
     }
+    
 }
 

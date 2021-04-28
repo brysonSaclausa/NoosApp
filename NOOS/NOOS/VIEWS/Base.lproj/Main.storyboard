@@ -31,7 +31,7 @@
         <!--Categories-->
         <scene sceneID="Qiq-sj-m6k">
             <objects>
-                <tableViewController id="79E-D2-1yM" customClass="ArticleTableViewController" customModule="NOOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="79E-D2-1yM" customClass="CategoryTableViewController" customModule="NOOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oaU-Nk-Ikg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,14 +115,25 @@
                     <view key="view" contentMode="scaleToFill" id="4Wo-Dt-DDF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2XD-zw-XfV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tWn-b2-JJl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tWn-b2-JJl" firstAttribute="bottom" secondItem="2XD-zw-XfV" secondAttribute="bottom" id="9Ja-eO-ctb"/>
+                            <constraint firstItem="2XD-zw-XfV" firstAttribute="top" secondItem="tWn-b2-JJl" secondAttribute="top" id="Gma-Uq-1q2"/>
+                            <constraint firstItem="tWn-b2-JJl" firstAttribute="trailing" secondItem="2XD-zw-XfV" secondAttribute="trailing" id="LHV-yw-B90"/>
+                            <constraint firstItem="2XD-zw-XfV" firstAttribute="leading" secondItem="tWn-b2-JJl" secondAttribute="leading" id="dAZ-5G-DOt"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pins" image="mappin.and.ellipse" catalog="system" selectedImage="mappin.and.ellipse" id="ReK-bU-GIU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQi-8O-Cyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1297" y="655"/>
+            <point key="canvasLocation" x="1380" y="655"/>
         </scene>
         <!--Categories-->
         <scene sceneID="pj7-Im-0nx">
@@ -206,12 +217,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knY-HR-k2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="501"/>
+            <point key="canvasLocation" x="354" y="655"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Newsfeed-->
         <scene sceneID="mre-Bm-ZGK">
             <objects>
-                <tableViewController id="vbh-Ql-ffb" sceneMemberID="viewController">
+                <tableViewController id="vbh-Ql-ffb" customClass="NewsfeedTableViewController" customModule="NOOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DmL-nO-Tco">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,11 +242,11 @@
                             <outlet property="delegate" destination="vbh-Ql-ffb" id="vm7-FX-tFa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5cO-bI-PnN"/>
+                    <navigationItem key="navigationItem" title="Newsfeed" id="5cO-bI-PnN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rug-rs-lUe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="1218"/>
+            <point key="canvasLocation" x="354" y="1417"/>
         </scene>
         <!--Profile-->
         <scene sceneID="V65-kD-6LE">

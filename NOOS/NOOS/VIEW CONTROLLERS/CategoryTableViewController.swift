@@ -7,12 +7,12 @@
 
 import UIKit
 
-class ArticleTableViewController: UITableViewController {
-    var articleController: CategoryController! = nil
+class CategoryTableViewController: UITableViewController {
+    var articleController: ArticleController! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        articleController = CategoryController()
+        articleController = ArticleController()
         tableView.delegate = self
         tableView.dataSource = self
         
